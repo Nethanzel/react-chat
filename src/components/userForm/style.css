@@ -1,0 +1,50 @@
+.card_controls {
+    border: 2px solid #000;
+    margin: 10px 0 5px 0;
+    padding: 10px;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    width: 96%;
+
+    max-height: 390px;
+    max-width: 310px;
+
+    background-color: #000000de;
+}
+
+.card_controls_sep {
+    margin: 25px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_controls_sep p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.card_controls_sep img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.card_controls_sep input[type=text] {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
+    outline: none;
+}
+
+.card_controls_sep input[type=file] {
+    font-size: 15px;
+    color: #fff;
+}

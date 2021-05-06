@@ -1,0 +1,17 @@
+.customBtnv2 {
+    border: 1px solid black;
+    padding: 0px 5px;
+    margin: 5px 15px 5px 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(227, 248, 246);
+    cursor: pointer;
+}
+
+.customBtnv2 p {
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}

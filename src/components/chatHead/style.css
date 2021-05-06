@@ -1,0 +1,71 @@
+#ChatHead {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    top: -1px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.ChatHead_cont {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.ChatHead_info {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding-left: 30px;
+    width: 80%;
+}
+
+.ChatHead_info img {
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.ChatHead_info h2 {
+    color: #fff;
+}
+
+.ChatHead_controls {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.ChatHead_controls img {
+    margin: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .ChatHead_info {
+        margin: 5px;
+        padding-left: 5px;
+
+    }
+
+    .ChatHead_controls {
+        width: 20%;
+        padding-right: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ChatHead_controls img {
+        margin: 5px;
+        height: 40px;
+        width: 40px;
+    }
+}

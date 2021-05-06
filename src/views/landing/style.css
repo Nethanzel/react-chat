@@ -1,0 +1,114 @@
+  .App-logo {
+    pointer-events: none;
+    width: 95vw;
+    object-fit: contain;
+    max-width: 100%;
+  }
+  
+  /* component style */
+
+  .landingView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100%;
+
+    background: linear-gradient(160deg, #ffffff, #18739a, #ffdf00, #ffa600, #ff0089, #52e055, #ffffff);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: AnimationName 9s linear infinite;
+    -moz-animation: AnimationName 9s linear infinite;
+    -o-animation: AnimationName 9s linear infinite;
+    animation: AnimationName 9s linear infinite;
+  }
+
+
+  .landingView .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    background: #ffffffbd;
+    width: 95%;
+    height: 95%;
+    max-width: 1140px;
+    max-height: 924px;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:46% 0%}
+    50%{background-position:55% 100%}
+    100%{background-position:46% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:46% 0%}
+      50%{background-position:55% 100%}
+      100%{background-position:46% 0%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:46% 0%}
+      50%{background-position:55% 100%}
+      100%{background-position:46% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:46% 0%}
+      50%{background-position:55% 100%}
+      100%{background-position:46% 0%}
+  }
+
+@media only screen and (max-width: 800px) {
+  .landingView {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+    .App-logo {
+      width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+
+  .App-logo {
+    width: 95vw;
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+
+  .landingView .card {
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .landingView .card {
+    height: 60%;
+  }
+
+  .landingView .card h1 {
+    font-size: 35px;
+  }
+
+  .landingView .card h2 {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .landingView .card h1 {
+    font-size: 28px;
+  }
+
+  .landingView .card h2 {
+    font-size: 18px;
+  }
+}
+
+

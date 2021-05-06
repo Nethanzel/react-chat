@@ -1,0 +1,53 @@
+.profileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    height: auto;
+
+    background: linear-gradient(160deg, #ffffff, #18739a, #ffdf00, #ffa600, #ff0089, #52e055, #ffffff);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: AnimationName 9s linear infinite;
+    -moz-animation: AnimationName 9s linear infinite;
+    -o-animation: AnimationName 9s linear infinite;
+    animation: AnimationName 9s linear infinite;
+}
+
+.profileView .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: #ffffffbd;
+    width: 90%;
+    height: auto;
+    max-width: 1140px;
+    max-height: 95vh;
+    padding: 10px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 550px) {
+    .profileView .card .App-logo {
+      display: none;
+    }
+
+    .profileView .card h1 {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-height: 830px) {
+
+    .profileView .card h1 {
+        font-size: 23px;
+    }
+
+    .profileView .card {
+        max-height: none;
+    }
+}

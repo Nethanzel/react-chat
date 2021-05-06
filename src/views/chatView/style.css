@@ -1,0 +1,136 @@
+.party{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: black;
+    background: linear-gradient(160deg, #ffffff, #18739a, #ffdf00, #ffa600, #ff0089, #52e055, #ffffff);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: AnimationName 9s linear infinite;
+    -moz-animation: AnimationName 9s linear infinite;
+    -o-animation: AnimationName 9s linear infinite;
+    animation: AnimationName 9s linear infinite;
+}
+
+.partyView {
+    background-color: #ffffff88;
+    height: calc(100% - 62px);
+
+    width: 100%;
+    padding: 0 40px 0 40px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partyView_msgView {
+    border: 1px solid #8d8d8d;
+    height: 100%;
+    width: 98%;
+    background-color: #000000ef;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 5px 10px 0px 10px;
+
+    max-width: 1140px;
+}
+
+.partyView_controlsView {
+    border: 1px solid #8d8d8d;
+    margin: 0px 10px 0px 10px;
+    height: 75px;
+    width: 98%;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: none;
+    max-width: 1140px;
+
+}
+
+.partyView_controlsView img {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.partyView_controlsView textarea {
+    height: 70%;
+    width: 92%;
+    outline: none;
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    border: #8d8d8d 1px solid;
+    margin: 5px 0 10px 5px;
+    resize: none;
+}
+
+.options {
+    margin: 0px 10px 0px 10px;
+    height: 40px;
+    border-bottom: none;
+}
+
+.options p {
+    margin: 0 0 0 15px;
+    color: #999999;
+    font-style: italic;
+}
+
+#imageSender {
+    display: none;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:46% 0%}
+    50%{background-position:55% 100%}
+    100%{background-position:46% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:46% 0%}
+      50%{background-position:55% 100%}
+      100%{background-position:46% 0%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:46% 0%}
+      50%{background-position:55% 100%}
+      100%{background-position:46% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:46% 0%}
+      50%{background-position:55% 100%}
+      100%{background-position:46% 0%}
+  }
+
+
+@media only screen and (max-width: 650px) {
+    .partyView {
+        padding: 0 10px 0 10px;
+
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .partyView {
+        padding: 0 0px 0 0px;
+
+    }
+
+    .partyView_controlsView {
+        width: 100%;
+    }
+
+    .partyView_msgView {
+        width: 98.5%;
+    }
+}

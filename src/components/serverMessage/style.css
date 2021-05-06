@@ -1,0 +1,29 @@
+.serverMessage {
+    background-color: #ffffff36;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+}
+
+.serverMessage p {
+    color: #fff;
+    font-style: italic;
+}
+
+.serverMessage p span {
+    background-color: rgb(87, 141, 240);
+    margin: 0 10px;
+    padding: 0 5px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    font-weight: bold;
+}
+
+.serveMsgTime p {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 10px;
+}
