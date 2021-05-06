@@ -16,6 +16,13 @@
     animation: AnimationName 9s linear infinite;
 }
 
+.profileView .card .App-logo {
+    pointer-events: none;
+    width: 95vw;
+    object-fit: contain;
+    max-width: 70%;
+  }
+
 .profileView .card {
     display: flex;
     flex-direction: column;
@@ -25,7 +32,6 @@
     width: 90%;
     height: auto;
     max-width: 1140px;
-    max-height: 95vh;
     padding: 10px;
 }
 
