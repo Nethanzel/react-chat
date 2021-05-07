@@ -15,23 +15,26 @@ const Chat = () => {
   const { getUser } = require("../../components/dataCache/module");
 
   useEffect(() => {
-    socket.on("joined", async (evData) => {
+    socket.on("joined", async (evData) => await onJoined(evData));
+    const onJoined = async (evData) => {
       const res = await fetch(`./api/queue/${socket.id}`)
       let data = await res.json();
       data = [...data, {...evData, date: timeResolver()}];
       setMessages(data);
       scrollDown();
-    });
+    }
 
-    socket.on("message", data => {
+    socket.on("message", data => onMessage(data));
+    const onMessage = (data) => {
       setMessages(msgList => [...msgList, {...data.data, date: timeResolver()}]);
       scrollDown();
-    });
+    }
 
-    socket.on("event", data => {
+    socket.on("event", data => onEvent(data));
+    const onEvent = (data) => {
       setMessages(msgList => [...msgList, {...data, date: timeResolver()}]);
       scrollDown();
-    });
+    }
 
     return function cleanup() {
       socket.off("joined");

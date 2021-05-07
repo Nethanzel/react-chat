@@ -27,13 +27,11 @@ function Party() {
       }
     }
 
-    socket.on("writting", data => {
-      document.getElementById("status").innerText = `${data.user} is writting...`;
-    });
+    socket.on("writting", data => onWritting(data));
+    const onWritting = (data) => document.getElementById("status").innerText = `${data.user} is writting...`;
 
-    socket.on("write_stop", () => {
-      document.getElementById("status").innerText = "";
-    });
+    socket.on("write_stop", () => onWriteStop());
+    const onWriteStop = () => document.getElementById("status").innerText = "";
 
     return function cleanup() {
       socket.off("writting");
